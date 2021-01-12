@@ -78,3 +78,45 @@ body{
     color: rgba(4, 151, 157, 0.933) !important;
 }
 
+/* Home styles */
+
+.home-image-wrapper{
+    display: flex;
+    background: url(images/white_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: rgba(4, 151, 157, 0.933); 
+    min-height: 500px;  
+    font-family: sans-serif;
+}
+.intro-text-wrapper{
+    margin: auto 0 auto 40px;
+    
+}
+.intro-text-wrapper .text-1{
+    font-size: 30px;
+}
+.intro-text-wrapper .text-2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.intro-text-wrapper .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.intro-text-wrapper .text-3 span{
+    color: rgb(237, 44, 83);
+}
+.intro-text-wrapper a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+}
