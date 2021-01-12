@@ -106,7 +106,7 @@ body{
     margin: 5px 0;
 }
 .intro-text-wrapper .text-3 span{
-    color: rgb(237, 44, 83);
+    color: rgb(63, 52, 54);
 }
 .intro-text-wrapper a{
     display: inline-block;
@@ -218,6 +218,13 @@ body{
     margin-bottom: 30px;
     text-align: center;
 }
+.skills-wrapper .soft-skills p{
+    width: 70%;
+    margin-left: 15%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
 .hard-skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
