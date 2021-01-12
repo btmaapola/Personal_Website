@@ -1,5 +1,4 @@
-/* Master or Body styles */
-
+/* Master styles */
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,50 +8,49 @@ body{
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .max-width{
-    max-width: 1326px;
-    padding: 0 88px;
+    max-width: 1300px;
+    padding: 0 80px;
     margin: auto;
     display: flex;
 }
-
-
 /* Nav styles */
 .nav-wrapper{
-    position: flex;
+    position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 20px 0px;
+    padding: 20px 0;
     transition: all 0.3s ease;
-    background-color: rgba(232, 232, 232, 0.933);
+    background: rgba(232, 232, 232, 0.933);
 } 
+.nav-wrapper.sticky{
+    padding: 15px 0;
+    background: rgba(232, 232, 232, 0.933);
+}
+.nav-wrapper .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
 .left-side .brand {
     color: crimson;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
 }
+
 .right-side{
     list-style: none;
     display: flex;
     color: #8a8a8a;
     font-weight: 600;
 }
-/* Aligns the logo and menu bars*/
-.nav-wrapper .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-wrapper.sticky{
-    padding: 15px 0;
-    background: rgba(232, 232, 232, 0.933);
-}
-/*
 .nav-wrapper > .right-side > div {
     margin-right: 30px;
     font-size: 0.9em;
 }
-*/
 .nav-link-wrapper{
     height: 20px;
     border-bottom: 1px solid transparent;
@@ -213,14 +211,19 @@ body{
     margin-bottom: 30px;
     text-align: center;
 }
+.skills-wrapper .soft-skills .text{
+    color: rgba(7, 111, 114, 0.933);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
 .hard-skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*padding: 60px 100px;*/
-    
 }
 .skill-box{
     padding: 0px;
@@ -231,7 +234,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items:center;
-    /*padding: 20px;*/
     margin-bottom: 15px;
     color:teal
 }
@@ -249,4 +251,55 @@ body{
 .skill-box p{
     color: teal;
     margin: 20px;
+}
+
+/*Portfolio Styles*/
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 0.3s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: crimson;
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+.white-background{
+    background-color: white;
 }
