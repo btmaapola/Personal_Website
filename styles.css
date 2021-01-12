@@ -265,6 +265,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 70px;
+    cursor: pointer;
 }
 .portfolio-item-wrapper{
     position: relative;
@@ -384,4 +385,5 @@ form button {
     padding: 12px 7px;
     border-radius: 6px;
     border: 2px solid crimson;
+    cursor: pointer;
 }
