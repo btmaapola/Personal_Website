@@ -1,0 +1,63 @@
+
+/* Nav styles */
+
+.nav-wrapper{
+    position: flex;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0px;
+    transition: all 0.3s ease;
+    background: rgba(232, 232, 232, 0.933);
+} 
+.left-side .brand {
+    color: crimson;
+    font-size: 15px;
+    font-weight: 600;
+}
+.right-side{
+    list-style: none;
+    display: flex;
+    color: #8a8a8a;
+    font-weight: 600;
+}
+/* Aligns the logo and menu bars*/
+.nav-wrapper .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-wrapper.sticky{
+    padding: 15px 0;
+    background: rgba(232, 232, 232, 0.933);
+}
+/*
+.nav-wrapper > .right-side > div {
+    margin-right: 30px;
+    font-size: 0.9em;
+}
+*/
+.nav-link-wrapper{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    margin-left: 20px;
+}
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin-left: 20px;
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid rgba(4, 151, 157, 0.933);
+}
+.nav-link-wrapper a:hover{
+    color: rgba(4, 151, 157, 0.933);
+}
+.active-nav-link{
+    border-bottom: 1px solid rgba(4, 151, 157, 0.933);
+}
+.active-nav-link a{
+    color: rgba(4, 151, 157, 0.933) !important;
+}
+
