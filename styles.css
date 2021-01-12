@@ -120,3 +120,71 @@ body{
     border-radius: 6px;
     border: 2px solid crimson;
 }
+/*About Webpage Styles*/
+.about-wrapper{
+    padding: 100px 0;
+    margin-right: 30px;
+}
+.about-image-wrapper img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 7px;
+
+}
+.about-wrapper .title{
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about-wrapper .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: teal;
+    transform: translateX(-50%);
+}
+.about-wrapper .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background:white;
+    transform: translateX(-50%);
+}
+/*About Me Webpage Styles*/
+.about-image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-image-wrapper .left{
+    width: 45%;
+}
+.about-image-wrapper .about-text-wrapper{
+    width: 55%;
+}
+.about-image-wrapper .about-text-wrapper .text{
+    color: rgba(7, 111, 114, 0.933);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-image-wrapper .about-text-wrapper .text span{
+    color: crimson;
+}
+.about-image-wrapper .about-text-wrapper p{
+   text-align: justify; 
+}
