@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takalani Maapola</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>src="https://code.jquery.com/jquery-3.5.1.min.js"</script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="max-width">
+
+                <div class="left-side">
+                    <div class="brand">
+                        <div> T. MAAPOLA</div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="main.html">HOME</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="webpage2.html">ABOUT ME</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="portfolio.html">PORTFOLIO</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="contacts.html">CONTACTS</a>
+                    </div>
+                    <div class="menu-button">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+                
+            <div class="home-image-wrapper">
+
+                <div class="intro-text-wrapper">
+                    <div class="text-1">Hello, my name is </div>
+                    <div class="text-2">Takalani Maapola</div>
+                    <div class="text-3">I'm a <span>Data Scientist</span></div>
+                    <a href="contacts.html">Hire me</a>
+                </div>
+            </div>
+      
+        </div>
+
+        <script>
+            $(document).ready(function(){
+            $(window).scroll(function(){
+                if(this.scrollY > 20){
+                    $('.nav-wrapper').addClass("sticky");
+                }else{
+                    $('.nav-wrapper').removeClass("sticky");
+                }
+            })
+            })
+        </script>
+        
+    </div>
+</body>
+
+
+</html>
