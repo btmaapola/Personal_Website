@@ -16,7 +16,7 @@ body{
     display: flex;
 }
 /* Nav styles */
-.nav-wrapper::before{
+.nav-wrapper{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -24,11 +24,6 @@ body{
     transition: all 0.3s ease;
     background: rgba(243, 240, 237, 0.933);
 } 
-.nav-wrapper::after{
-    width: 190px;
-    position: fixed;
-    display: inline;
-}
 .nav-wrapper.sticky{
     padding: 15px 0;
     background: rgba(243, 240, 237, 0.933);
@@ -36,16 +31,13 @@ body{
 .nav-wrapper .max-width{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
-
 .left-side .brand {
     color: crimson;
     font-size: 25px;
     font-weight: 600;
 }
-
 .right-side{
     display: flex;
     color: #8a8a8a;
@@ -56,7 +48,6 @@ body{
     font-size: 16px;
     margin-left: 20px;
 }
-
 .nav-link-wrapper{
     height: 20px;
     border-bottom: 1px solid transparent;
