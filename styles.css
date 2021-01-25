@@ -78,7 +78,8 @@ a.active-nav-link,a:hover{
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 640vh;
+        /*height: 100vh;*/
         background: #2c3e50 !important;
         top: 80px;
         left: -100%;
@@ -95,7 +96,7 @@ a.active-nav-link,a:hover{
     }
     a:hover,a.active-nav-link{
         background: none;
-        color: #0082e6;
+        color: crimson;
     }
     #check:checked ~ ul{
         left: 0;
@@ -151,56 +152,38 @@ a.active-nav-link,a:hover{
     height: 500px;
     width: 500px;
     object-fit: cover;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 7px;
 
 }
 .title{
     color: black;
-    position: relative;
     text-align: center;
     font-size: 35px;
     font-weight: 500px;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-}
-.title::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 190px;
-    height: 3px;
-    background: teal;
-    transform: translateX(-50%);
 }
 
-.title::after{
-    position: absolute;
-    left: 50%;
+.content_1{
+    text-decoration: overline;
+    text-decoration-color: teal;
+    text-align: center;
     font-size: 20px;
     color: crimson;
     padding: 5px;
-    background:white;
-    transform: translateX(-50%);
-}
-.about-wrapper .title::after{
-    content: "who i am";
-    bottom: -12px;
+    margin-bottom: 60px;
+    padding-bottom: 20px; 
 }
 
 .about-image-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.about-image-wrapper .left{
-    width: 45%;
-}
-.about-image-wrapper .about-text-wrapper{
-    width: 55%;
-}
+
 .about-image-wrapper .about-text-wrapper .text{
     color: rgba(7, 111, 114, 0.933);
     font-size: 25px;
@@ -220,10 +203,7 @@ a.active-nav-link,a:hover{
     margin-bottom: 30px;
 }
 /* Skills*/
-.skills-wrapper .title::after{
-    content: "my abilities";
-    bottom: -12px;
-}
+
 .skills-content-wrapper{
     margin-bottom: 10px;
     text-align: justify;
@@ -292,9 +272,11 @@ a.active-nav-link,a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 70px;
     cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .portfolio-item-wrapper{
-    position: relative;
+    position: static;
 }
 .portfolio-img-background{
     height: 350px;
@@ -302,46 +284,26 @@ a.active-nav-link,a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 .img-text-wrapper{
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
     padding-left: 100px;
     padding-right: 100px;
 }
-.logo-wrapper img{
-    width: 50%;
-    margin-bottom: 20px;
-}
-
 .img-text-wrapper .subtitle{
     transition: 0.3s;
-    font-weight: 600;
-    color: transparent;
-}
-.img-text-wrapper:hover .subtitle{
+    font-size: larger;
     font-weight: 600;
     color: crimson;
 }
 .img-darken{
-    transition: 1s;
+    transition: 0.3s;
     filter: brightness(10%);
 }
-.white-background{
-    background-color: white;
-}
+
 
 /*contacts*/
-.contact-wrapper .title::after{
-    content: "Get in touch";
-    bottom: -16px;
-}
 .contact-wrapper .title{
     margin-top: 120px;
     font-weight: bold;
@@ -410,4 +372,11 @@ form button {
     border-radius: 6px;
     border: 2px solid crimson;
     cursor: pointer;
+}
+.container iframe {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60%;
+    height: 500px;
+    margin-bottom: 20px;
 }
