@@ -278,7 +278,7 @@ a.active-nav-link,a:hover{
 .portfolio-item-wrapper{
     position: static;
 }
-.portfolio-img-background{
+.portfolio-img-background img{
     height: 350px;
     width: 100%;
     background-size: cover;
